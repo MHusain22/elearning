@@ -3,8 +3,11 @@
 }
 .coursesCard .items {
   background-color: #fff;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
+  border-radius: 5px;
+  text-align: justify;
+  align-items: baseline;
 }
 .coursesCard .img {
   width: 80px;
@@ -112,6 +115,14 @@
 .online .box:hover h1 {
   color: #fff;
 }
-/*-------------online---------*/
-@media screen and (max-width: 768px) {
+
+.coursesCard .container{
+ display: grid;
+ grid-template-columns:40% 40%;
+ column-gap: 20px;
+ row-gap: 20px;
+
 }
+
+
+/*-------------online---------*/
