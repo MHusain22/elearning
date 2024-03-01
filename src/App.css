@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+ scroll-behavior: smooth ;
 }
 
 body {
@@ -159,6 +159,15 @@ p {
 .coursesCard .item {
   padding: 5px !important;
 }
+
+@media screen and  (max-width:1200px){
+  .coursesCard .container .items .content .text h1{
+    font-size: 10px;
+  }
+  .coursesCard {
+    padding-top: 150px !important;
+  }
+}
 @media screen and (max-width: 1000px) {
   .contain {
     flex-direction: column;
@@ -171,7 +180,7 @@ p {
     font-size: 1.3rem;
   }
   .coursesCard {
-    padding-top: 200px !important;
+    padding-top: 250px !important;
   }
   .button {
     display: flex;
@@ -179,22 +188,170 @@ p {
   .row {
     width: 70%;
   }
+
+  .coursesCard .container .items a button{
+    padding: 9px 12px;
+
+  }
 }
 @media screen and (max-width: 768px) {
-  .grid2,
+  /* .grid2,
   .grid3,
   .grid {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
   .back {
     background-position: center;
     padding-top: 50%;
     height: 80vh;
   }
+  .hero .container{
+    margin-top: 10%;
+  }
   .hero {
-    padding-top: 150px !important;
+    padding-top: 20px !important;
+  }
+  .hero .container .row{
+    width: 60vw;
   }
   /* #heading h1 {
     font-size: 2rem;
   } */
+  .hero .container .row {
+    width: 90vw;
+  }
+  .hero .container .row #heading h1{
+    font-size:2rem;
+  }
+  .hero .container .row p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+.hero{
+  height: 90vh !important;
+}
+
+  .hero .container .row .button button{
+   margin:4px 10px 0 0;
+  }
+  footer .container{
+   flex-direction: column;  
+  }
+  .newletter .container{
+    display:flex;
+    flex-direction: column;
+    font-size: medium;
+
+    gap: 20px;
+  }
+
+  .newletter .container .row{
+    width: 100%;
+
+  }
+  .coursesCard {
+    padding-top: 0px !important;
+  }
+
+  .coursesCard .container .items{
+     font-size: small
+     ;
+     padding: 0;
+     width: 100%;
+     font-size: 10px;
+  }
+  .coursesCard .container .items .content .text h1{
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .coursesCard .container .items a button{
+    padding: 6px 9px;
+    font-size: 10px;
+    margin: 10px;
+  }
+  .hero .container {
+    margin-top: 10%;
+    text-align: left;
+}
+}
+@media screen and (max-width:650px){
+  .coursesCard {
+    padding-top: 50px !important;
+  }
+
+}
+
+
+@media screen and (max-width:450px){
+  .hero .container .row p{
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .hero .container .row .button button{
+    padding: 10px 12px;
+    font-size: 10px;
+   }
+   .items .flexSB{
+    flex-direction: column;
+    text-align: left;
+   }
+   .coursesCard {
+    padding-top: 150px !important;
+    display: grid !important;
+  }
+  .coursesCard .container{
+    grid-templete-columns: 200px;
+  }
+  .aboutHome .right{
+    padding: 20px !important;
+  }
+  .aboutHome .right .row{
+    padding: 0;
+  }
+  .aboutHome .img{
+    width: max-content;
+  }
+
+  .testimonal img{
+    width:50px !important;
+    height: 50px !important;
+    position: relative;
+  }
+  .testimonal i {
+    position: absolute;
+    bottom: 45px !important;
+    left: 35px !important;
+    background-color: #1eb2a6;
+    color: #fff;
+}
+.icon{
+  width:20px !important;
+  height: 20px !important;
+  
+}
+.hero .container {
+  margin-top:100px !important;
+  text-align: left;
+}
+.hero .container .row p{
+  font-size: 15px;
+}
+#heading {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.coursesCard .container{
+  display: grid;
+  grid-template-columns:300px;
+  column-gap: 10px;
+  row-gap: 10px;
+ 
+ }
+ .coursesCard .container .items .content .text h1 {
+  font-size: 15px;
+  line-height: normal;
+}
 }
