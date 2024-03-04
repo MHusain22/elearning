@@ -8,7 +8,7 @@
         <h1 style={{color:"red",background:WebGL2RenderingContext}}>Courses</h1>
         <Back title="Explore Courses" />
         <CoursesCard />
-        {/* <OnlineCourses /> */}
+       
       </>
     );
   };
