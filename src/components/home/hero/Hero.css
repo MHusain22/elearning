@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   background-image: url("../../../../public/images/bg.webp");
   background-size: cover;
   background-attachment: fixed;
@@ -13,6 +13,7 @@
   color: #fff;
   
 }
+
 .hero #heading h3 {
   color: #fff;
 }
@@ -21,7 +22,37 @@
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 768px) {
+
+ */
+
+ .hero{
+background-image: url('../../../../public/images/back.webp');
+background: linear-gradient();
+background-size: cover;
+position: absolute;
+z-index: -1;
+width: 100%;
+height: 101vh;
+top:0;
+color: #fff;
+right:0;
+text-align: center;
+padding: 130px 0px;
+width: 100% !important;
+background-size: cover !important;
+background-repeat: no-repeat !important;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.46)), url('../../../../public/images/bg.webp');
+ }
+ .hero .container{
+  margin-top: 5%;
+  width: 100vw;
+  text-align: left;
+ }
+ .hero .container .row #heading{
+  text-align: left;
+ }
+
+ @media screen and (max-width: 768px) {
   .margin {
     height: 40vh;
   }
@@ -29,8 +60,9 @@
     background-position: right;
     height: 80vh;
   }
-  .hero .row {
-    width: 100%;
-  }
+  
+  .hero .container{
+    margin-top: 25%;
+    text-align: left;
+   }
 }
-
