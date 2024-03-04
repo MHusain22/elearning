@@ -10,6 +10,7 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import Course from "./components/CourseId/Course"
+import Chapter from "./components/ChapterId/Chapter"
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
       </Routes> */}
         <Routes>
         <Route exact path="/Courses/:id" element={<Course />} />
+      </Routes>
+        <Routes>
+        <Route exact path="/Chapter/:id" element={<Chapter />} />
       </Routes>
         {/* <Routes>
         <Route exact path="/journal" element={<Blog />} />
